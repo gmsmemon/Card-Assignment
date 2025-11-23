@@ -1,0 +1,141 @@
+/* Basic Card Styles (Separated CSS File) */
+
+:root{
+  --bg: #f3f6f9;
+  --card: #ffffff;
+  --accent: #4f46e5;
+  --muted: #6b7280;
+  --radius: 12px;
+}
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: linear-gradient(180deg, var(--bg), #eef2ff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+  padding:32px;
+}
+
+.card{
+  width:320px;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow: 0 6px 18px rgba(20,20,50,0.08);
+  overflow:hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  border:1px solid rgba(99,102,241,0.06);
+}
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(20,20,50,0.12);
+}
+
+.hero{
+  height:140px;
+  background: linear-gradient(120deg, rgba(79,70,229,0.12), rgba(99,102,241,0.06));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--accent);
+  font-weight:700;
+  font-size:24px;
+}
+
+.content{
+  padding:18px 16px;
+}
+
+.card h3{
+  margin:0 0 8px 0;
+  font-size:18px;
+  color:#0f172a;
+}
+
+.card p{
+  margin:0 0 14px 0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.5;
+}
+
+.meta{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.badge{
+  background:rgba(79,70,229,0.08);
+  color:var(--accent);
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:600;
+}
+
+.btn{
+  background:var(--accent);
+  color:white;
+  border:0;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:13px;
+  font-weight:600;
+}
+
+ /* Banner Size */
+    .hero {
+      width: 100%;
+      height: 350px; /* 👈 Adjust banner height here */
+      overflow: hidden;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Makes it a perfect banner */
+    }
+
+    /* Card Layout */
+    .card {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .meta {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .badge {
+      background: #000;
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .btn {
+      padding: 8px 15px;
+      background: #c0392b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
